@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BACK"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Back"
+            android:insetLeft="20dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            app:icon="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Home"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:insetLeft="25dp"
+            app:icon="@drawable/kisspng_computer_icons_house_icon_design_clip_art_j_5ac6922ebd3889_4269017715229629907751"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Calendar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Calendar"
+            android:insetLeft="20dp"
+            app:icon="@drawable/kisspng_computer_icons_calendar_date_time_information_calendar_icon_5ac5bd6161e494_140789821522908513401"
+            app:iconPadding="18dp"
+            app:iconSize="40dp"
+            app:iconTintMode="src_atop" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRopa"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="180dp"
+        android:text="Prendas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOutfits"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="116dp"
+        android:text="Combinaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRopa" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="335dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:text="¿Que quieres mirar?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

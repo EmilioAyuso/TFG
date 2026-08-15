@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PantallaCalendario">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="416dp"
+        android:layout_height="108dp"
+        android:contentDescription="Mis Viajes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_pantalla" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="383dp"
+        android:layout_height="108dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="CALENDARIO"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.654">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ATRAS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Cambiar de foto hacia izquierda"
+            app:layout_constraintEnd_toStartOf="@+id/derUp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+        <TextView
+            android:id="@+id/mesAnio"
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Dec 2023"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ADELANTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Cambiar de foto hacia derecha"
+            android:rotationY="180"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="375dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LUN"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MAR"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MIE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JUE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAB"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DOM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/calendario"
+        android:layout_width="374dp"
+        android:layout_height="373dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BACK"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Back"
+            android:insetLeft="20dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            app:icon="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Home"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:insetLeft="25dp"
+            app:icon="@drawable/kisspng_computer_icons_house_icon_design_clip_art_j_5ac6922ebd3889_4269017715229629907751"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Calendar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Calendar"
+            android:insetLeft="20dp"
+            app:icon="@drawable/kisspng_computer_icons_calendar_date_time_information_calendar_icon_5ac5bd6161e494_140789821522908513401"
+            app:iconPadding="18dp"
+            app:iconSize="40dp"
+            app:iconTintMode="src_atop" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

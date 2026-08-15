@@ -1,0 +1,54 @@
+<!-- list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="329dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Space
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonIncrement"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="+" />
+
+    <Space
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textViewItem"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Elemento"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonDecrement"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="-" />
+</LinearLayout>

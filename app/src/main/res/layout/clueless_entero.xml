@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/izqCalzado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="216dp"
+        android:clickable="true"
+        android:contentDescription="Cambiar de foto hacia izquierda"
+        app:layout_constraintEnd_toStartOf="@+id/derUp2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/derCalzado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="Cambiar de foto hacia derecha"
+        android:rotationY="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/fotoZapatos2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/izqUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="536dp"
+        android:clickable="true"
+        android:contentDescription="Cambiar de foto hacia izquierda"
+        app:layout_constraintEnd_toStartOf="@+id/derCalzado2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/derUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="Cambiar de foto hacia derecha"
+        android:rotationY="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/fotoArriba3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092" />
+
+    <ImageView
+        android:id="@+id/fotoZapatos2"
+        android:layout_width="149dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotoArriba3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/fotoArriba3"
+        android:layout_width="166dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/bttnCrear3"
+        android:layout_width="180dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="84dp"
+        android:text="CREAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BACK"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Back"
+            android:insetLeft="20dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            app:icon="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Home"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:insetLeft="25dp"
+            app:icon="@drawable/kisspng_computer_icons_house_icon_design_clip_art_j_5ac6922ebd3889_4269017715229629907751"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Calendar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Calendar"
+            android:insetLeft="20dp"
+            app:icon="@drawable/kisspng_computer_icons_calendar_date_time_information_calendar_icon_5ac5bd6161e494_140789821522908513401"
+            app:iconPadding="18dp"
+            app:iconSize="40dp"
+            app:iconTintMode="src_atop" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="164dp"
+        android:layout_height="424dp"
+        app:layout_constraintEnd_toEndOf="@+id/fotoArriba3"
+        app:layout_constraintTop_toTopOf="@+id/fotoArriba3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar8"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        app:layout_constraintStart_toStartOf="@+id/fotoZapatos2"
+        app:layout_constraintTop_toTopOf="@+id/fotoZapatos2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

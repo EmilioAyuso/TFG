@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TFG_1"
+        tools:targetApi="31">
+        <activity
+            android:name=".NewUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tfg_1.PantallaInicio" />
+        <activity android:name="com.example.tfg_1.PerfilUsuario" />
+        <activity android:name="com.example.tfg_1.PantallaCalendario" />
+        <activity android:name="com.example.tfg_1.Armario.RopaOOutfits" />
+        <activity android:name="com.example.tfg_1.Armario.Prendas"
+                android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.tfg_1.Armario.PrendaClasificada" />
+        <activity android:name="com.example.tfg_1.Armario.CameraActivity" />
+        <activity android:name="com.example.tfg_1.Armario.GaleryActivity" />
+        <activity android:name="com.example.tfg_1.Armario.EtiquetarPrenda" />
+        <activity android:name="com.example.tfg_1.Armario.ListaOpciones" />
+        <activity android:name="com.example.tfg_1.Armario.InfoPrenda" />
+        <activity android:name="com.example.tfg_1.ManualOAutomatic" />
+        <activity android:name="com.example.tfg_1.CrearManual.Manual" />
+        <activity android:name="com.example.tfg_1.CrearManual.CluelessPartes" />
+        <activity android:name="com.example.tfg_1.CrearManual.AniadirComplementos"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.tfg_1.CrearManual.AniadirC2" />
+        <activity android:name="com.example.tfg_1.CrearManual.AniadirC3" />
+        <activity android:name="com.example.tfg_1.CrearManual.InfoOutfit" />
+        <activity android:name="com.example.tfg_1.Armario.Outfits"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.tfg_1.CrearManual.OutfitClasificado" />
+        <activity android:name="com.example.tfg_1.CrearManual.CluelessEntero" />
+        <activity android:name="com.example.tfg_1.CrearManual.EtiquetarOutfit" />
+        <activity android:name="com.example.tfg_1.CrearManual.ListaOpcionesOutfit" />
+        <activity android:name="com.example.tfg_1.Viajes.MisViajes" />
+        <activity android:name="com.example.tfg_1.Viajes.NuevoViaje" />
+        <activity android:name="com.example.tfg_1.Viajes.Seleccionar_Fecha" />
+        <activity android:name="com.example.tfg_1.Viajes.ElegirTipos" />
+        <activity android:name="com.example.tfg_1.Viajes.Seleccion_Outfits" />
+        <activity android:name="com.example.tfg_1.Viajes.ViajeGuardado" />
+        <activity android:name="com.example.tfg_1.Automatico.AutomaticoUso" />
+        <activity android:name="com.example.tfg_1.Automatico.GeneradorOutfit" />
+        <activity android:name="com.example.tfg_1.Automatico.AniadirC2" />
+        <activity android:name="com.example.tfg_1.Automatico.AniadirC3" />
+        <activity android:name="com.example.tfg_1.EditarPerfil" />
+
+        <receiver android:name="com.example.tfg_1.Viajes.AlarmaMaleta" />
+    </application>
+
+
+</manifest>

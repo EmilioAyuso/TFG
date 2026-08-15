@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/titulo_pantalla" />
+    <foreground android:drawable="@drawable/_7687" />
+    <monochrome android:drawable="@drawable/kisspng_clothes_hanger_vector_graphics_clip_art_portable_n_hanger_clipart_line_art_15_clip_arts_for_free_do_5bffcf86455015_7684890315434914622839" />
+</adaptive-icon>

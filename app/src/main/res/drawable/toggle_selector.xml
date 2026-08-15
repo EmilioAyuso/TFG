@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado activado -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Ajusta el radio según tus necesidades -->
+            <solid android:color="#00FF00" /> <!-- Color cuando está activado -->
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+    <!-- Estado desactivado -->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Ajusta el radio según tus necesidades -->
+            <solid android:color="#FF0000" /> <!-- Color cuando está desactivado -->
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+</selector>

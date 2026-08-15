@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BACK"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/back"
+            android:insetLeft="20dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            app:icon="@drawable/kisspng_computer_icons_arrowhead_clip_art_back_icon_5b16ef5dad26a1_8048549615282297257092"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Home"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:insetLeft="25dp"
+            app:icon="@drawable/kisspng_computer_icons_house_icon_design_clip_art_j_5ac6922ebd3889_4269017715229629907751"
+            app:iconPadding="18dp"
+            app:iconSize="35dp"
+            app:iconTintMode="src_atop" />
+
+        <Button
+            android:id="@+id/Calendar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/calendar"
+            android:insetLeft="20dp"
+            app:icon="@drawable/kisspng_computer_icons_calendar_date_time_information_calendar_icon_5ac5bd6161e494_140789821522908513401"
+            app:iconPadding="18dp"
+            app:iconSize="40dp"
+            app:iconTintMode="src_atop" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="377dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Todos Tus Viajes"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.444">
+
+        <LinearLayout
+            android:id="@+id/linearContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="416dp"
+        android:layout_height="108dp"
+        android:contentDescription="Mis Viajes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_pantalla" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="408dp"
+        android:layout_height="108dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="MIS VIAJES"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

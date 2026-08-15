@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TFG_1</string>
+    <string name="descripcion_bttnUser">Acceder a los datos del usuario</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+</resources>
